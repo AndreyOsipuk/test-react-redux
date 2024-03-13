@@ -5,7 +5,14 @@
   grid-template-columns: repeat(6, 1fr);
   padding: 20px;
 }
+
 .grid-container > :nth-child(1),
 .grid-container > :nth-child(2) {
   grid-column: span 3;
+}
+
+@media screen and (max-width: 920px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

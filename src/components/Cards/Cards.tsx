@@ -13,12 +13,12 @@ export const Jokes: FC = () => {
   return (
     <Box className="grid-container">
       {jokes.map((joke) => (
-        <Link to={`/${joke.id}`}>
-          <Card
-            sx={{ minWidth: 275, gridColumn: "span 2" }}
-            key={joke.id}
-            variant="outlined"
-          >
+        <Card
+          sx={{ minWidth: 275, gridColumn: "span 2" }}
+          key={joke.id}
+          variant="outlined"
+        >
+          <Link to={`/${joke.id}`}>
             <CardContent>
               <Box
                 sx={{
@@ -42,8 +42,8 @@ export const Jokes: FC = () => {
                 </Box>
               </Box>
             </CardContent>
-          </Card>
-        </Link>
+          </Link>
+        </Card>
       ))}
     </Box>
   );
